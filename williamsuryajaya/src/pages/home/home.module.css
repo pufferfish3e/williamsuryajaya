@@ -1,0 +1,40 @@
+.heroContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstNameDiv {
+    transform: scale(1.3,1);
+}
+
+.heroTextFirstName {
+    display: inline-block;
+    background-image: linear-gradient(90deg, #000000 0%, var(--dark-green) 15%, var(--light-green) 50%, var(--pale-green) 90%, #e8e8e8 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+}
+
+.lastNameDiv {
+    transform: translateX(130px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+}
+
+.heroTextLastName {
+    color: var(--pale-green);
+    margin: 0;
+    font-size: 35px;
+    transform: scale(1.6,1.3);
+    letter-spacing: -3px;
+}
