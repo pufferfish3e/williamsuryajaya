@@ -3,11 +3,11 @@ import styles from './layout.module.css';
 
 export default function Layout() {
     return (
-        <div>
-            <main>
+        <div className={styles.layoutContainer}>
+            <main className={styles.mainContent}>
                 <Outlet />
             </main>
-            <div className={styles.footer}>
+            <footer className={styles.footer}>
                 <div className={styles.info}>
                     <p><i className="fa fa-phone"></i><b> (+65) 83828512</b></p>
                     <p><i className="fa fa-envelope"></i><b> sunvicstudio@gmail.com</b></p>
@@ -15,7 +15,7 @@ export default function Layout() {
                 <div className={styles.cvbutton}>
                     <button>View CV</button>
                 </div>
-            </div>
+            </footer>
         </div>
     )
 }
