@@ -14,7 +14,7 @@ export default function FadeIn({ children, delay = 0 }: { children: React.ReactN
                     setVisible(true);
                 }
             });
-        }, { threshold: 0.3 });
+        }, { threshold: 0.4 });
         
         observer.observe(currentRef);
         return () => {

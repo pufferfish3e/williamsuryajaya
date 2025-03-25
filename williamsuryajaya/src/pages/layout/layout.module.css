@@ -44,3 +44,11 @@
     height: 40px;
     width: 120px;
 }
+
+@media only screen and (max-width: 1280px) {
+
+.info p {
+    font-size: 18px;
+}
+
+}
