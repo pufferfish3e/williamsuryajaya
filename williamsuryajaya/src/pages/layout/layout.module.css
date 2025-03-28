@@ -7,7 +7,7 @@
     height: 5vh;
     padding: 20px 0px;
     z-index: 1000;
-    background-color: #000000;
+    background-color: rgba(0,0,0,0.8);
     width: 100%;
 }
 
@@ -43,6 +43,15 @@
 .cvbutton button {
     height: 40px;
     width: 120px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 1s ease, background-color 1s ease;
+}
+
+.cvbutton button:hover {
+    color: black;
+    background-color: white;
+    transition: color 1s ease, background-color 1s ease;
 }
 
 @media only screen and (max-width: 1280px) {

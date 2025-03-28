@@ -7,6 +7,7 @@ import tmrwImage from '../../assets/tmrw.jpeg';
 import ocbImage from '../../assets/ocb.jpeg';
 import imdaImage from '../../assets/imda.jpeg';
 import circlesxImage from '../../assets/circlesx.jpeg';
+import Data from "../../data";
 
 export default function Home() {
     return(
@@ -32,10 +33,10 @@ export default function Home() {
         <section className={styles.heroTextContainer}>
             <div className={styles.textBox}>
             <FadeIn>
-                <h3>Your go-to-wizard for digital transformation, impactful design and product innovation</h3>
+                <h3>{Data.heroSection.title}</h3>
             </FadeIn>
             <FadeIn>
-                <p>With over 13 years of experience in digital products, my expertise and creative leadership spans various industries, including but not limited to retail banking, corporate banking, financial services, government projects, etc.</p>
+                <p>{Data.heroSection.description}</p>
             </FadeIn>
             </div>
         </section>
@@ -47,15 +48,45 @@ export default function Home() {
                 </div>
             </FadeIn>
             <FadeIn>
-                <div>
-                    <img className={styles.storyImageTop} src={TopImage} alt='image1'></img>
+                <div className={styles.storyImage}>
+                    <div className={styles.storyImageContainer}>
+                        <img className={styles.storyImageTop} src={TopImage} alt='image1' />
+                        <div className={styles.imageOverlay}>
+                            <h3 className={styles.imageTitle}>{Data.experienceHoverSection.title}</h3>
+                            <button className={styles.imageButton}>View Story</button>
+                        </div>
+                    </div>
                 </div>
             </FadeIn>
             <FadeIn>
                 <div className={styles.experienceImageContainer}>
-                    <img src={dbsImage} alt='image2'/>
-                    <img src={tmrwImage} alt='image3' />
-                    <img src={ocbImage} alt='image4' />
+                <div className={styles.storyImageSmall}>
+                    <div className={styles.storyImageContainerSmall}>
+                        <img className={styles.storyImageTopSmall} src={dbsImage} alt='image2' />
+                        <div className={styles.imageOverlaySmall}>
+                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title}</h3>
+                            <button className={styles.imageButtonSmall}>View Story</button>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.storyImageSmall}>
+                    <div className={styles.storyImageContainerSmall}>
+                        <img className={styles.storyImageTopSmall} src={tmrwImage} alt='image3' />
+                        <div className={styles.imageOverlaySmall}>
+                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title}</h3>
+                            <button className={styles.imageButtonSmall}>View Story</button>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.storyImageSmall}>
+                    <div className={styles.storyImageContainerSmall}>
+                        <img className={styles.storyImageTopSmall} src={ocbImage} alt='image4' />
+                        <div className={styles.imageOverlaySmall}>
+                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title}</h3>
+                            <button className={styles.imageButtonSmall}>View Story</button>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </FadeIn>
         </section>
@@ -63,10 +94,10 @@ export default function Home() {
             <div className={styles.experienceContainer}>
                 <div className={styles.textBox}>
                 <FadeIn>
-                    <h3>Transformation always starts with the shift of <u>mindset.</u></h3>
+                    <h3>{Data.experienceSection.title1}</h3>
                 </FadeIn>
                 <FadeIn>
-                    <p>One of my personal joys is to see how my client's behavior, thought process and approach change after learning design thinking. As a self-taught design thinker, I run workshops and trainings to help multiple businesses achieve impactful outcomes.</p>
+                    <p>{Data.experienceSection.description1}</p>
                 </FadeIn>
                 </div>
                 <FadeIn>
@@ -79,10 +110,10 @@ export default function Home() {
             <div className={styles.experienceContainer}>
                 <div className={styles.textBox}>
                 <FadeIn>
-                    <h3>Concept powered with <u>research</u> is a magic in the making.</h3>
+                    <h3>{Data.experienceSection.title2}</h3>
                 </FadeIn>
                 <FadeIn>
-                    <p>I believe that understanding and analysis are the foundations of creative practice that lead to holistic end-to-end design solutions.</p>
+                    <p>{Data.experienceSection.description2}</p>
                 </FadeIn>
                 </div>
                 <FadeIn> 
