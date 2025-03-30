@@ -10,7 +10,12 @@ const Data = {
         description2: <>I believe that understanding and analysis are the foundations of creative practice that lead to holistic end-to-end design solutions.</>,
     },
     experienceHoverSection: {
-        title: <>Standard Chartered Bank Corporate Banking Experience</>,
+        title1: <>Standard Chartered Bank Corporate Banking Experience</>,
+        title2: <>DBS Credit<br />Architecture<br />Program</>,
+        title3: <>UOB TMRW<br />Retail Banking</>,
+        title4: <>OCB OMNI<br />Product Rebrand</>,
+        title5: <>Infocomm Media<br /> Development Authority (SG):<br /> Design Thinking</>,
+        title6: <>Circles X:<br /> Product Strategy and Concepts</>,
     }
 }
 

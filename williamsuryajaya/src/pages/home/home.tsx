@@ -52,7 +52,7 @@ export default function Home() {
                     <div className={styles.storyImageContainer}>
                         <img className={styles.storyImageTop} src={TopImage} alt='image1' />
                         <div className={styles.imageOverlay}>
-                            <h3 className={styles.imageTitle}>{Data.experienceHoverSection.title}</h3>
+                            <h3 className={styles.imageTitle}>{Data.experienceHoverSection.title1}</h3>
                             <button className={styles.imageButton}>View Story</button>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function Home() {
                     <div className={styles.storyImageContainerSmall}>
                         <img className={styles.storyImageTopSmall} src={dbsImage} alt='image2' />
                         <div className={styles.imageOverlaySmall}>
-                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title}</h3>
+                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title2}</h3>
                             <button className={styles.imageButtonSmall}>View Story</button>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ export default function Home() {
                     <div className={styles.storyImageContainerSmall}>
                         <img className={styles.storyImageTopSmall} src={tmrwImage} alt='image3' />
                         <div className={styles.imageOverlaySmall}>
-                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title}</h3>
+                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title3}</h3>
                             <button className={styles.imageButtonSmall}>View Story</button>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ export default function Home() {
                     <div className={styles.storyImageContainerSmall}>
                         <img className={styles.storyImageTopSmall} src={ocbImage} alt='image4' />
                         <div className={styles.imageOverlaySmall}>
-                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title}</h3>
+                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title4}</h3>
                             <button className={styles.imageButtonSmall}>View Story</button>
                         </div>
                     </div>
@@ -102,7 +102,15 @@ export default function Home() {
                 </div>
                 <FadeIn>
                 <span className={styles.experienceSpinner} /> 
-                <img src={imdaImage} alt='image5'></img>
+                <div className={styles.storyImage}>
+                    <div className={styles.storyImageContainer}>
+                        <img className={styles.storyImageTop} src={imdaImage} alt='image5' />
+                        <div className={styles.imageOverlay}>
+                            <h3 className={styles.imageTitle}>{Data.experienceHoverSection.title5}</h3>
+                            <button className={styles.imageButton}>View Story</button>
+                        </div>
+                    </div>
+                </div>
                 </FadeIn>
             </div>
         </section>
@@ -117,7 +125,15 @@ export default function Home() {
                 </FadeIn>
                 </div>
                 <FadeIn> 
-                    <img src={circlesxImage} alt='image5'></img>
+                <div className={styles.storyImage}>
+                    <div className={styles.storyImageContainer}>
+                        <img className={styles.storyImageTop} src={circlesxImage} alt='image6' />
+                        <div className={styles.imageOverlay}>
+                            <h3 className={styles.imageTitle}>{Data.experienceHoverSection.title6}</h3>
+                            <button className={styles.imageButton}>View Story</button>
+                        </div>
+                    </div>
+                </div>
                 </FadeIn>
             </div>
         </section>
