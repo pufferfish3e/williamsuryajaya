@@ -164,12 +164,15 @@
     height: auto;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: auto;
 }
 
 .storyImageContainer {
     position: relative;
     width: 80%;
     overflow: hidden;
+    height: inherit;
 }
 
 .storyImageTop {
@@ -200,7 +203,7 @@
 
 
 .imageTitle {
-    max-width: 50vw;
+    max-width: 60vw;
     text-align: center;
     color: white;
     font-size: 5vh;
@@ -351,6 +354,17 @@ p {
 
 h3 {
     font-size: 35px;
+}
+
+.imageTitle {
+    font-size: 30px;
+    padding-bottom: 3vh;
+}
+
+.imageButton {
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
 }
 
 }

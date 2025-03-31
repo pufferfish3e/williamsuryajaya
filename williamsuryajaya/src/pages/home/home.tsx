@@ -1,13 +1,15 @@
 import styles from './home.module.css';
 import FadeIn from '../../components/fadeIn';
-import ProfilePhoto from '../../assets/profilephoto.jpeg';
-import TopImage from '../../assets/unifieddesignsystem.jpeg';
-import dbsImage from '../../assets/dbs.jpeg';
-import tmrwImage from '../../assets/tmrw.jpeg';
-import ocbImage from '../../assets/ocb.jpeg';
-import imdaImage from '../../assets/imda.jpeg';
-import circlesxImage from '../../assets/circlesx.jpeg';
 import Data from "../../data";
+
+const ProfilePhoto = "/images/profilephoto.jpeg";
+const circlesxImage = "/images/circlesx.jpeg";
+const dbsImage = "/images/dbs.jpeg";
+const imdaImage = "/images/imda.jpeg";
+const ocbImage = "/images/ocb.jpeg";
+const tmrwImage = "/images/tmrw.jpeg";
+const TopImage = "/images/unifieddesignsystem.jpeg";
+
 
 export default function Home() {
     return(
