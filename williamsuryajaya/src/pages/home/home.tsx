@@ -1,14 +1,15 @@
 import styles from './home.module.css';
 import FadeIn from '../../components/fadeIn';
 import Data from "../../data";
+import {Link} from 'react-router-dom';
 
 const ProfilePhoto = "/images/profilephoto.jpeg";
-const circlesxImage = "/images/circlesx.jpeg";
-const dbsImage = "/images/dbs.jpeg";
-const imdaImage = "/images/imda.jpeg";
-const ocbImage = "/images/ocb.jpeg";
-const tmrwImage = "/images/tmrw.jpeg";
-const TopImage = "/images/unifieddesignsystem.jpeg";
+const circlesxImage = "/images/hero6.png";
+const dbsImage = "/images/hero2.png";
+const imdaImage = "/images/hero5.png";
+const ocbImage = "/images/hero4.png";
+const tmrwImage = "/images/hero3.png";
+const TopImage = "/images/hero1.png";
 
 
 export default function Home() {
@@ -35,10 +36,10 @@ export default function Home() {
         <section className={styles.heroTextContainer}>
             <div className={styles.textBox}>
             <FadeIn>
-                <h3>{Data.heroSection.title}</h3>
+                <h3>{Data.heroSection.title1}</h3>
             </FadeIn>
             <FadeIn>
-                <p>{Data.heroSection.description}</p>
+                <p>{Data.heroSection.description1}</p>
             </FadeIn>
             </div>
         </section>
@@ -54,8 +55,8 @@ export default function Home() {
                     <div className={styles.storyImageContainer}>
                         <img className={styles.storyImageTop} src={TopImage} alt='image1' />
                         <div className={styles.imageOverlay}>
-                            <h3 className={styles.imageTitle}>{Data.experienceHoverSection.title1}</h3>
-                            <button className={styles.imageButton}>View Story</button>
+                            <h3 className={styles.imageTitle}>{Data.heroSection.title2}</h3>
+                            <Link to='/standardchartered' ><button className={styles.imageButton}>View Story</button></Link>
                         </div>
                     </div>
                 </div>
@@ -66,7 +67,7 @@ export default function Home() {
                     <div className={styles.storyImageContainerSmall}>
                         <img className={styles.storyImageTopSmall} src={dbsImage} alt='image2' />
                         <div className={styles.imageOverlaySmall}>
-                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title2}</h3>
+                            <h3 className={styles.imageTitleSmall}>{Data.heroSection.title3}</h3>
                             <button className={styles.imageButtonSmall}>View Story</button>
                         </div>
                     </div>
@@ -75,7 +76,7 @@ export default function Home() {
                     <div className={styles.storyImageContainerSmall}>
                         <img className={styles.storyImageTopSmall} src={tmrwImage} alt='image3' />
                         <div className={styles.imageOverlaySmall}>
-                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title3}</h3>
+                            <h3 className={styles.imageTitleSmall}>{Data.heroSection.title4}</h3>
                             <button className={styles.imageButtonSmall}>View Story</button>
                         </div>
                     </div>
@@ -84,7 +85,7 @@ export default function Home() {
                     <div className={styles.storyImageContainerSmall}>
                         <img className={styles.storyImageTopSmall} src={ocbImage} alt='image4' />
                         <div className={styles.imageOverlaySmall}>
-                            <h3 className={styles.imageTitleSmall}>{Data.experienceHoverSection.title4}</h3>
+                            <h3 className={styles.imageTitleSmall}>{Data.heroSection.title5}</h3>
                             <button className={styles.imageButtonSmall}>View Story</button>
                         </div>
                     </div>
@@ -96,10 +97,10 @@ export default function Home() {
             <div className={styles.experienceContainer}>
                 <div className={styles.textBox}>
                 <FadeIn>
-                    <h3>{Data.experienceSection.title1}</h3>
+                    <h3>{Data.heroSection.title6}</h3>
                 </FadeIn>
                 <FadeIn>
-                    <p>{Data.experienceSection.description1}</p>
+                    <p>{Data.heroSection.description6}</p>
                 </FadeIn>
                 </div>
                 <FadeIn>
@@ -108,7 +109,7 @@ export default function Home() {
                     <div className={styles.storyImageContainer}>
                         <img className={styles.storyImageTop} src={imdaImage} alt='image5' />
                         <div className={styles.imageOverlay}>
-                            <h3 className={styles.imageTitle}>{Data.experienceHoverSection.title5}</h3>
+                            <h3 className={styles.imageTitle}>{Data.heroSection.title7}</h3>
                             <button className={styles.imageButton}>View Story</button>
                         </div>
                     </div>
@@ -120,10 +121,10 @@ export default function Home() {
             <div className={styles.experienceContainer}>
                 <div className={styles.textBox}>
                 <FadeIn>
-                    <h3>{Data.experienceSection.title2}</h3>
+                    <h3>{Data.heroSection.title8}</h3>
                 </FadeIn>
                 <FadeIn>
-                    <p>{Data.experienceSection.description2}</p>
+                    <p>{Data.heroSection.description8}</p>
                 </FadeIn>
                 </div>
                 <FadeIn> 
@@ -131,7 +132,7 @@ export default function Home() {
                     <div className={styles.storyImageContainer}>
                         <img className={styles.storyImageTop} src={circlesxImage} alt='image6' />
                         <div className={styles.imageOverlay}>
-                            <h3 className={styles.imageTitle}>{Data.experienceHoverSection.title6}</h3>
+                            <h3 className={styles.imageTitle}>{Data.heroSection.title9}</h3>
                             <button className={styles.imageButton}>View Story</button>
                         </div>
                     </div>
