@@ -5,23 +5,18 @@ export default function FadeIn({ children, delay = 0 }: { children: React.ReactN
     const domRef = useRef<HTMLDivElement>(null);
     
     useEffect(() => {
-        const currentRef = domRef.current;
-        if (!currentRef) return;
-        
         const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setVisible(true);
+            if (entries[0].isIntersecting) {
+                setVisible(true);
+                if (domRef.current) {
+                    observer.unobserve(domRef.current);
                 }
-            });
-        }, { threshold: 0.4 });
-        
-        observer.observe(currentRef);
-        return () => {
-            if (currentRef) {
-                observer.unobserve(currentRef);
             }
-        };
+        });
+        if (domRef.current) {
+            observer.observe(domRef.current);
+        }
+        return () => {observer.disconnect()};
     }, []);
     
     return (
