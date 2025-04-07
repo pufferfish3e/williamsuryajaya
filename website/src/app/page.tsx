@@ -1,95 +1,148 @@
+'use client';
+
+import styles from './home.module.css';
+import FadeIn from '@/components/fadeIn';
+import Data from "@/data/data";
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+const ProfilePhoto = "/images/profilephoto.jpeg";
+const hero1 = "/images/hero1.png";
+const hero2 = "/images/hero2.png";
+const hero3 = "/images/hero3.png";
+const hero4 = "/images/hero4.png";
+const hero5 = "/images/hero5.png";
+const hero6 = "/images/hero6.png";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    return(
+        <>
+        <section className={styles.heroContainer}>
+            <FadeIn>
+            <div className={styles.itemDiv}>
+                <div className={styles.profileDiv}>
+                    <div className={styles.loaderRing}></div>
+                    <div className={styles.profilePhotoContainer}>
+                    <Image src={ProfilePhoto} alt='placeholder image' fill style={{ objectFit: 'cover'}} />
+                    </div> 
+                    <span className={styles.profileBackground}></span>
+                </div>
+                <div className={styles.firstNameDiv}>
+                    <h1 className={styles.heroTextFirstName}>WILLIAM</h1>
+                </div>
+                <div className={styles.lastNameDiv}>
+                    <h2 className={styles.heroTextLastName}>SURYA</h2>
+                    <h2 className={styles.heroTextLastName}>JAYA</h2>
+                </div>
+            </div>
+            </FadeIn>
+        </section>
+        <section className={styles.heroTextContainer}>
+            <div className={styles.textBox}>
+            <FadeIn>
+                <h3>{Data.heroSection.title1}</h3>
+            </FadeIn>
+            <FadeIn>
+                <p>{Data.heroSection.description1}</p>
+            </FadeIn>
+            </div>
+        </section>
+        <section className={styles.storyContainer}>
+            <FadeIn>
+                <div className={styles.storyLargeTextContainer}>
+                    <span className={styles.gradientBlob}></span>
+                    <div className={styles.storyLargeText}>STORY</div>
+                </div>
+            </FadeIn>
+            <FadeIn>
+                <div className={styles.storyImage}>
+                    <div className={styles.storyImageContainer}>
+                        <Image className={`${styles.storyImageTop} ${styles.storyImage1}`} src={hero1} width={1000} height={450} alt='image1' id='image1'/>
+                        <div className={styles.imageOverlay}>
+                            <h3 className={styles.imageTitle}>{Data.heroSection.title2}</h3>
+                            <Link href="/standardchartered"><button className={styles.imageButton}>View Story</button></Link>
+                        </div>
+                    </div>
+                </div>
+            </FadeIn>
+            <FadeIn>
+                <div className={styles.experienceImageContainer}>
+                <div className={styles.storyImageSmall}>
+                    <div className={styles.storyImageContainerSmall}>
+                        <Image className={styles.storyImageTopSmall} src={hero2} fill alt='image2' />
+                        <div className={styles.imageOverlaySmall}>
+                            <h3 className={styles.imageTitleSmall}>{Data.heroSection.title3}</h3>
+                            <button className={styles.imageButtonSmall}>View Story</button>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.storyImageSmall}>
+                    <div className={styles.storyImageContainerSmall}>
+                        <Image className={styles.storyImageTopSmall} fill src={hero3} alt='image3' />
+                        <div className={styles.imageOverlaySmall}>
+                            <h3 className={styles.imageTitleSmall}>{Data.heroSection.title4}</h3>
+                            <button className={styles.imageButtonSmall}>View Story</button>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.storyImageSmall}>
+                    <div className={styles.storyImageContainerSmall}>
+                        <Image className={styles.storyImageTopSmall} fill src={hero4} alt='image4' />
+                        <div className={styles.imageOverlaySmall}>
+                            <h3 className={styles.imageTitleSmall}>{Data.heroSection.title5}</h3>
+                            <button className={styles.imageButtonSmall}>View Story</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </FadeIn>
+        </section>
+        <section>
+            <div className={styles.experienceContainer}>
+                <div className={styles.textBox}>
+                <FadeIn>
+                    <h3>{Data.heroSection.title6}</h3>
+                </FadeIn>
+                <FadeIn>
+                    <p>{Data.heroSection.description6}</p>
+                </FadeIn>
+                </div>
+                <FadeIn>
+                <span className={styles.experienceSpinner} /> 
+                <div className={styles.storyImage}>
+                    <div className={styles.storyImageContainer}>
+                        <Image className={styles.storyImageTop} width={800} height={800} src={hero5} alt='image5' id='image5'/>
+                        <div className={styles.imageOverlay}>
+                            <h3 className={styles.imageTitle}>{Data.heroSection.title7}</h3>
+                            <button className={styles.imageButton}>View Story</button>
+                        </div>
+                    </div>
+                </div>
+                </FadeIn>
+            </div>
+        </section>
+        <section>
+            <div className={styles.experienceContainer}>
+                <div className={styles.textBox}>
+                <FadeIn>
+                    <h3>{Data.heroSection.title8}</h3>
+                </FadeIn>
+                <FadeIn>
+                    <p>{Data.heroSection.description8}</p>
+                </FadeIn>
+                </div>
+                <FadeIn> 
+                <div className={styles.storyImage}>
+                    <div className={styles.storyImageContainer}>
+                        <Image className={styles.storyImageTop} width={1000} height={1000} src={hero6} alt='image6' id='image6'/>
+                        <div className={styles.imageOverlay}>
+                            <h3 className={styles.imageTitle}>{Data.heroSection.title9}</h3>
+                            <button className={styles.imageButton}>View Story</button>
+                        </div>
+                    </div>
+                </div>
+                </FadeIn>
+            </div>
+        </section>
+        </>
+    )
 }
