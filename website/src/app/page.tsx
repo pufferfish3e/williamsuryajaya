@@ -42,23 +42,23 @@ export default function Home() {
     </section>
     <section className="relative w-screen flex flex-col items-center pb-40">
       <motion.div initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1, ease: 'easeOut'}} className="pb-10 flex flex-col justify-center items-center relative group">
-        <Image src="/SCB.png" alt="SCB Image" width={1920} height={1080} className="relative w-full h-auto transition-all duration-500 group-hover:opacity-40" />
+        <Image src="/SCB.png" alt="SCB Image" width={1920} height={1080} className="relative w-full h-auto transition-all duration-500 group-hover:opacity-40 group-hover:scale-105" />
         <h3 className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-4xl max-w-2xl text-center leading-normal">{Data.heroSection.title2}</h3>
         <button className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-48 text-white text-xl py-1 px-6 rounded-3xl border-solid border-white border-2">View Story</button>
       </motion.div>
       <motion.div initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1, ease: 'easeOut'}} className="flex flex-col gap-3 lg:flex-row">
           <div className="flex flex-col justify-center items-center relative group">
-            <Image src="/DBS.png" alt="DBS Image" width={400} height={400} className="relative rounded-xl transition-all duration-500 group-hover:opacity-40" />
+            <Image src="/DBS.png" alt="DBS Image" width={400} height={400} className="relative rounded-xl transition-all duration-500 group-hover:opacity-40 group-hover:scale-105" />
             <h3 className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-4xl max-w-2xl text-center leading-normal">{Data.heroSection.title3}</h3>
             <button className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-60 text-white text-xl py-1 px-6 rounded-3xl border-solid border-white border-2">View Story</button>
           </div>
           <div className="flex flex-col justify-center items-center relative group">
-            <Image src="/UOB.png" alt="UOB Image" width={400} height={400} className="relative rounded-xl transition-all duration-500 group-hover:opacity-40" />
+            <Image src="/UOB.png" alt="UOB Image" width={400} height={400} className="relative rounded-xl transition-all duration-500 group-hover:opacity-40 group-hover:scale-105" />
             <h3 className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-4xl max-w-2xl text-center leading-normal">{Data.heroSection.title4}</h3>
             <button className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-48 text-white text-xl py-1 px-6 rounded-3xl border-solid border-white border-2">View Story</button>
           </div>
           <div className="flex flex-col justify-center items-center relative group">
-            <Image src="/OCB.png" alt="OCB Image" width={400} height={400} className="relative rounded-xl transition-all duration-500 group-hover:opacity-40" />
+            <Image src="/OCB.png" alt="OCB Image" width={400} height={400} className="relative rounded-xl transition-all duration-500 group-hover:opacity-40 group-hover:scale-105" />
             <h3 className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-4xl max-w-2xl text-center leading-normal">{Data.heroSection.title5}</h3>
             <button className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-48 text-white text-xl py-1 px-6 rounded-3xl border-solid border-white border-2">View Story</button>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
         <motion.p initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1, ease: 'easeOut'}} className="text-2xl text-center leading-[2.2] text-gray-400">{Data.heroSection.description6}</motion.p>
       </div>
       <motion.div initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1, ease: 'easeOut'}} className="flex flex-col justify-center items-center relative group">
-        <Image src="/Banner02.png" alt="IMDA Image" width={1680} height={765} className=" w-4/5 h-auto transition-all duration-500 group-hover:opacity-40 z-10 rounded-xl" />
+        <Image src="/Banner02.png" alt="IMDA Image" width={1680} height={765} className=" w-4/5 h-auto transition-all duration-500 group-hover:opacity-40 z-10 rounded-xl group-hover:scale-105" />
         <h3 className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-4xl max-w-2xl text-center leading-normal z-20">{Data.heroSection.title7}</h3>
         <button className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-60 text-white text-xl py-1 px-6 rounded-3xl border-solid border-white border-2 z-20">View Story</button>
       </motion.div>
@@ -83,7 +83,7 @@ export default function Home() {
         <motion.p initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1, ease: 'easeOut'}} className="text-2xl text-center leading-[2.2] text-gray-400">{Data.heroSection.description8}</motion.p>
       </div>
       <motion.div initial={{opacity: 0, y: 100}} whileInView={{opacity: 1, y: 0}} transition={{duration: 1, ease: 'easeOut'}} className="flex flex-col justify-center items-center relative group pt-40">
-        <Image src="/Banner03.png" alt="Circles X Image" width={1680} height={765} className=" w-4/5 h-auto transition-all duration-500 group-hover:opacity-40 z-10 rounded-xl" />
+        <Image src="/Banner03.png" alt="Circles X Image" width={1680} height={765} className=" w-4/5 h-auto transition-all duration-500 group-hover:opacity-40 z-10 rounded-xl group-hover:scale-105" />
         <h3 className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-4xl max-w-2xl text-center leading-normal z-20">{Data.heroSection.title9}</h3>
         <button className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-48 text-white text-xl py-1 px-6 rounded-3xl border-solid border-white border-2 z-20">View Story</button>
       </motion.div>
